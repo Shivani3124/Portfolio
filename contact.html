@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+body{
+    /* background-color: rgb(185, 150, 218); */
+    background-image: url('p9.png');
+    height: 100%;
+    background-color: #ADEFD1FF;
+
+}
+    nav {
+        width: 350px;
+        background-color: #00203FFF;
+        height: 730px;
+        margin-top: -52px;
+
+    }
+
+    nav a {
+        margin-left: 30px;
+        text-decoration: none;
+        color: aliceblue;
+        margin-bottom: 30px;
+    }
+
+    .con .myimg {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-top: 20px;
+        margin-left: 70px;
+        border: 5px solid rgb(120, 118, 118);
+        box-shadow: 0 0 20px rgb(91, 90, 90),0 0 50px rgb(89, 88, 88) ;
+        filter:contrast(140%);
+    }
+
+    h4 {
+        color: bisque;
+        margin-left: 90px;
+        text-decoration: bold;
+    }
+
+    .icons {
+        color: bisque;
+        margin-left: 3px;
+    }
+
+    .icons a {
+        border: 1px solid rgb(250, 247, 240);
+        border-radius: 20px;
+        padding: 7px 9px;
+    }
+    
+    .fa-snapchat {
+        color: black;
+        background-color: rgb(204, 215, 57);
+
+    }
+
+    .fa-instagram {
+
+        background-image: linear-gradient(to bottom, rgb(96, 9, 81), rgb(216, 77, 17), yellow);
+
+    }
+
+    .fa-twitter {
+        color: rgb(77, 182, 238);
+        background-color: aliceblue;
+    }
+
+    .fa-linkedin {
+
+        background-color: blue;
+    }
+
+    .fa-github {
+        background-color: rgb(76, 11, 137);
+
+    }
+
+   
+
+    .container2 {
+        margin-left: 350px;
+        margin-top: 112px;
+        /* width: 300px; */
+    }
+
+    .container3 {
+        margin-left: 900px;
+        margin-top: 20px;
+        width: 600px;
+        /* background-color: aquamarine; */
+        padding-left: 20px;
+    }
+
+ 
+.active{
+    text-shadow: 0 0 5px rgb(129, 109, 129),0 0 25px rgb(156, 123, 156);
+    font-size: 20px;
+
+}
+.active::after{
+    content: ' >>>';
+    color: antiquewhite;
+
+}
+.nav{
+    position: fixed;
+}
+button {
+        background: #82cf4e;
+        border-radius: 999px;
+        box-shadow: #5E5DF0 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: fit-content;
+        word-break: break-word;
+        border: 0;
+    }
+
+    button a {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container1 ">
+        <nav class="nav navbar-nav">
+            <div class="con">
+                <img class="myimg" src="shivani.jpg" alt=""><br>
+                <h4>Shivani Verma</h4>
+                <div class="icons">
+                    <a href="  https://www.snapchat.com/add/shivani_v9713?share_id=0Hz8OaW7mEA&locale=en-US
+                    " target="_blank" class="fa fa-snapchat"></a>
+                    <a href="  https://twitter.com/Shivi_3124" target="_blank" class="fa fa-twitter"></a>
+                    <a href="  https://github.com/Shivani3124
+                    " target="_blank" class="fa fa-github"></a>
+                    <a href="  https://www.linkedin.com/in/shivani-verma-036620279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+                    " target="_blank" class="fa fa-linkedin"></a>
+                    <a href="  https://www.instagram.com/__shivi_31_08?igsh=cGxkb2YzMGxlZWYy
+                    " target="_blank" class="fa fa-instagram"></a>
+                </div>
+                
+            </div>
+
+            <a href="index.html" class="hover "><i class="fa fa-home" ></i>&nbsp;Home</a>
+            <a href="about.html" class="hover "><i class="fa fa-clone" ></i>&nbsp;About</a>
+            <a href="resume.html" class="hover"><i class="fa fa-book" ></i>&nbsp;Resume</a>
+            <a href="certificate.html" class="hover"><i class="fa fa-briefcase"></i>&nbsp;Certificates</a>
+            <a href="projects.html" class="hover"><i class="fa fa-phone"></i>&nbsp;Projects</a>
+            <a href="contact.html" class="hover active"><i class="fa fa-handshake-o" ></i>&nbsp;Contact</a>
+            <p style="margin-left: 40px;margin-top: 30px; color: rgb(123, 122, 120);">&nbsp;copyright shivani312001@gmail.com</p>
+
+        </nav>
+
+    </div>
+    
+    <div class="container2">
+    
+        <div class="container">
+            
+            
+            <div class="row" style=" object-fit: cover; background-image:linear-gradient(rgb(113, 142, 222),rgb(156, 96, 154)) ;margin-top: -60px;height: 600px; ">
+                <div><h1 style="text-align: center;border-top-left-radius: 10px; border-top-right-radius: 10px; color: aliceblue;background-color: rgb(41, 34, 91);">Contact Me</h1>
+                <p style="text-align: center;margin-top: -15px; padding-bottom: 20px;color: aliceblue;background-color: rgb(41, 34, 91);">In order to discuss in more details,please caontact me by <br>phone or throught social networks. The productivity will have a personal meeting,if you are in madhya pradesh</p></div>
+                <div class="col-md-6">
+                    <!-- <div id="googlemap" style="width:100%; height:350px;"></div> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.5970950452147!2d80.84882745!3d24.568581549999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39847f046a033797%3A0xa4364b6e0b6f13e4!2sSangram%20Colony%2C%20Satna%2C%20Madhya%20Pradesh%20485001!5e0!3m2!1sen!2sin!4v1711697531981!5m2!1sen!2sin" width="480" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
+                     </div>
+                <br />
+                <div class="col-md-6">
+                    <form class="my-form" method="POST" action="conn.php">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" class="form-control" name="username" id="form-name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" class="form-control" id="form-email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Telephone</label>
+                            <input type="text" class="form-control" id="form-subject" name="telephone" placeholder="Contact">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Give your feedback </label>
+                            <textarea class="form-control" id="form-message" name="feedback" placeholder="Message"></textarea>
+                        </div><br><br>
+                        <button >SEND MESSAGE</button>                    </form>
+                </div>
+            </div>
+        </div>
+      
+    </div><br>
+    <!-- <div class="container3">
+        <marquee behavior="" direction="" style="margin-top: -70px;">
+            <a href="https://shivani3124.github.io/Expanding_icons/
+            ">Fcebook
+            </a>
+         </marquee>
+        <marquee behavior="" direction="right" style="margin-top: -70px;">
+            <a href="https://shivani3124.github.io/Expanding_icons/
+            ">Instagram
+            </a>
+         </marquee>
+    </div> -->
+</body>
+
+</html>

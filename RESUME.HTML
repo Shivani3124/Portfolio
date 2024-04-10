@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+body{
+    /* background-color: rgb(185, 150, 218); */
+    background-image: url('p9.png');
+    height: 100%;
+    background-color: #ADEFD1FF;
+}
+    nav {
+        width: 350px;
+        background-color: #00203FFF;
+        height: 730px;
+        margin-top: -27px;
+
+    }
+
+    nav a {
+        margin-left: 30px;
+        text-decoration: none;
+        color: aliceblue;
+        margin-bottom: 30px;
+    }
+
+    .con .myimg {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-top: 20px;
+        margin-left: 70px;
+        border: 5px solid rgb(120, 118, 118);
+        box-shadow: 0 0 20px rgb(91, 90, 90),0 0 50px rgb(89, 88, 88) ;
+        filter:contrast(140%);
+    }
+
+    h4 {
+        color: bisque;
+        margin-left: 90px;
+        text-decoration: bold;
+    }
+
+    .icons {
+        color: bisque;
+        margin-left: 3px;
+    }
+
+    .icons a {
+        border: 1px solid rgb(250, 247, 240);
+        border-radius: 20px;
+        padding: 7px 9px;
+    }
+    
+    .fa-snapchat {
+        color: black;
+        background-color: rgb(204, 215, 57);
+
+    }
+
+    .fa-instagram {
+
+        background-image: linear-gradient(to bottom, rgb(96, 9, 81), rgb(216, 77, 17), yellow);
+
+    }
+
+    .fa-twitter {
+        color: rgb(77, 182, 238);
+        background-color: aliceblue;
+    }
+
+    .fa-linkedin {
+
+        background-color: blue;
+    }
+
+    .fa-github {
+        background-color: rgb(76, 11, 137);
+
+    }
+
+   
+
+    .container2 {
+        margin-left: 400px;
+        margin-top: 12px;
+        /* width: 300px; */
+    }
+
+    .container3 {
+        margin-left: 900px;
+        margin-top: 20px;
+        width: 600px;
+        /* background-color: aquamarine; */
+        padding-left: 20px;
+    }
+
+ 
+.active{
+    text-shadow: 0 0 5px rgb(129, 109, 129),0 0 25px rgb(156, 123, 156);
+    font-size: 20px;
+
+}
+.active::after{
+    content: ' >>>';
+    color: antiquewhite;
+
+}
+.nav{
+    position: fixed;
+}
+
+
+   
+    h1{
+  
+  width: 90%;
+  font-size: 55px;
+  font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(to right ,#553c9a, #ee4b2b, #00c2cb, #ff7f50, #553c9a);
+  -webkit-background-clip: text;
+  background-clip: text;    
+  background-size: 200%;
+  background-position: -200%;
+  animation: animated-gradient 2s infinite alternate-reverse;      
+}
+@keyframes animated-gradient{
+  to{
+    background-position: 200%;
+  }
+}
+.row p {
+            font-weight: bold;
+        }
+        .progress {
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            background: none;
+            margin: 0 auto;
+            box-shadow: none;
+            position: relative;
+            overflow: visible;
+        }
+
+        .progress:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .progress>span {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .progress .progress-left {
+            left: 0;
+        }
+
+        .progress .progress-bar {
+            width: 100%;
+            height: 100%;
+            background: none;
+            border-width: 5px;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+        }
+
+        .progress .progress-left .progress-bar {
+            left: 100%;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-left: 0;
+            -webkit-transform-origin: center left;
+            transform-origin: center left;
+        }
+
+        .progress .progress-right {
+            right: 0;
+        }
+
+        .progress .progress-right .progress-bar {
+            left: -100%;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+            border-right: 0;
+            -webkit-transform-origin: center right;
+            transform-origin: center right;
+            animation: loading-1 1.8s linear forwards;
+        }
+
+        .progress .inner-circle,
+        .progress .progress-value {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 5px solid #8e8e8e;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 50px;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .progress .inner-circle:after {
+            content: "";
+            width: 5px;
+            height: 60px;
+            background: #8e8e8e;
+            margin: 0 auto;
+            position: absolute;
+            top: -60px;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            transition: all 10s linear 0s;
+        }
+
+        .progress.blue .progress-bar {
+            border-color: #1653c3;
+        }
+
+        .progress.blue .progress-value {
+            color: #049dff;
+        }
+
+        .progress.blue .progress-left .progress-bar {
+            animation: loading-2 1.5s linear forwards 1.8s;
+        }
+
+        .progress.blue .inner-circle {
+            animation: loading-6 3.8s ease forwards;
+        }
+
+        .progress.purple .progress-bar {
+            border-color: #ae0f47;
+        }
+
+        .progress.purple .progress-value {
+            color: #680750;
+        }
+
+        .progress.purple .progress-left .progress-bar {
+            animation: loading 1.3s linear forwards 1.8s;
+        }
+
+        .progress.purple .inner-circle {
+            animation: loading-10 3.8s ease forwards;
+        }
+
+        .progress.yellow .progress-bar {
+            border-color: #fdba04;
+        }
+
+        .progress.yellow .progress-value {
+            color: #fdba04;
+        }
+
+        .progress.yellow .progress-left .progress-bar {
+            animation: loading-3 1s linear forwards 1.8s;
+        }
+
+        .progress.yellow .inner-circle {
+            animation: loading-7 3.8s ease forwards;
+        }
+
+        .progress.pink .progress-bar {
+            border-color: #ed687c;
+        }
+
+        .progress.pink .progress-value {
+            color: #ed687c;
+        }
+
+        .progress.pink .progress-left .progress-bar {
+            animation: loading-4 1.3s linear forwards 1.8s;
+        }
+
+        .progress.pink .inner-circle {
+            animation: loading-8 3.8s ease forwards;
+        }
+
+        .progress.green .progress-bar {
+            border-color: #1abc9c;
+        }
+
+        .progress.green .progress-value {
+            color: #1abc9c;
+        }
+
+        .progress.green .progress-left .progress-bar {
+            animation: loading-5 1.2s linear forwards 1.8s;
+        }
+
+        .progress.green .inner-circle {
+            animation: loading-9 3.8s ease forwards;
+        }
+
+        @keyframes loading-1 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+
+        @keyframes loading-2 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(144deg);
+                transform: rotate(144deg);
+            }
+        }
+
+        @keyframes loading {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(130deg);
+                transform: rotate(100deg);
+            }
+        }
+
+        @keyframes loading-3 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        }
+
+        @keyframes loading-4 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(300deg);
+                transform: rotate(110deg);
+            }
+        }
+
+        @keyframes loading-5 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(138deg);
+                transform: rotate(138deg);
+            }
+        }
+
+        @keyframes loading-6 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(324deg);
+                transform: rotate(324deg);
+            }
+        }
+
+        @keyframes loading-10 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(280deg);
+                transform: rotate(280deg);
+            }
+        }
+
+        @keyframes loading-7 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+            }
+        }
+
+        @keyframes loading-8 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(290deg);
+                transform: rotate(290deg);
+            }
+        }
+
+        @keyframes loading-9 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(320deg);
+                transform: rotate(320deg);
+            }
+        }
+
+        @media only screen and (max-width: 990px) {
+            .progress {
+                margin-bottom: 20px;
+            }
+        }
+        .container {
+            margin-left: 80PX;
+            
+            width: 700PX;
+            margin-top: 10px;
+        }
+        button {
+        background: #82cf4e;
+        border-radius: 999px;
+        box-shadow: #5E5DF0 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: fit-content;
+        word-break: break-word;
+        border: 0;
+    }
+</style>
+
+<body id="color">
+    <div class="container1 ">
+        <nav class="nav navbar-nav" id="nav">
+            <div class="con">
+                <img class="myimg" src="shivani.jpg" alt=""><br>
+                <h4>Shivani Verma</h4>
+                <div class="icons">
+                    <a href="  https://www.snapchat.com/add/shivani_v9713?share_id=0Hz8OaW7mEA&locale=en-US
+                    " target="_blank" class="fa fa-snapchat"></a>
+                    <a href="  https://twitter.com/Shivi_3124" target="_blank" class="fa fa-twitter"></a>
+                    <a href="  https://github.com/Shivani3124
+                    " target="_blank" class="fa fa-github"></a>
+                    <a href="  https://www.linkedin.com/in/shivani-verma-036620279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+                    " target="_blank" class="fa fa-linkedin"></a>
+                    <a href="  https://www.instagram.com/__shivi_31_08?igsh=cGxkb2YzMGxlZWYy
+                    " target="_blank" class="fa fa-instagram"></a>
+                </div>
+                
+            </div>
+
+            <a href="index.html" class="hover "><i class="fa fa-home" ></i>&nbsp;Home</a>
+            <a href="about.html" class="hover "><i class="fa fa-clone" ></i>&nbsp;About</a>
+            <a href="RESUME.HTML" class="hover active"><i class="fa fa-book" ></i>&nbsp;Resume</a>
+            <a href="certificate.html" class="hover"><i class="fa fa-briefcase"></i>&nbsp;Certificates</a>
+            <a href="projects.html" class="hover"><i class="fa fa-phone"></i>&nbsp;Projects</a>
+            <a href="contact.html" class="hover "><i class="fa fa-handshake-o" ></i>&nbsp;Contact</a>
+            <p style="margin-left: 40px;margin-top: 30px; color: rgb(123, 122, 120);">&nbsp;copyright shivani312001@gmail.com</p>
+
+        </nav>
+
+    </div>
+    
+    <div class="container2">
+        
+        <!-- <h2 class="about">Resume</h2>  -->
+        <h1>SHIVANI <SPAN class="Primary">VERMA</SPAN></h1>
+
+        <div class="row">
+            <div class="col-sm-6" style="">
+                <h3 style="font-weight: 700;"><U>Academic Details :</U></h3>
+                <P>MCA(Running) <br><i class='far fa-calendar-alt'></i>2022-24 <br>
+                    From AKS University, Satna M.p. <br>
+                <P>BSc.(CS)<br> 2021 <br>
+                    From Shri Rama Krishna College Commerce & Science, Satna m.p.<br>
+                <P>12th <br> 2018 <br>
+                    From Sraswati Shishu Mandir Krishna ,Satna M.p. <br>
+                <P>10th<br> 2016<br>
+                    From Sraswati Shishu Mandir Krishna ,Satna M.p.<br>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-6" style="margin-left: -100PX;">
+                <div class="container">
+                    <H3 style="font-weight: 700;">&nbsp;&nbsp;<U>My technical Skills :</U></H3><br>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="progress blue">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="inner-circle"></div>
+                                <div class="progress-value"><span>HTML 90</span>%</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="progress purple">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="inner-circle"></div>
+                                <div class="progress-value"><span>JS 60</span>%</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 ">
+                            <div class="progress pink">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="inner-circle"></div>
+                                <div class="progress-value"><span>CSS 80</span>%</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="progress green">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="inner-circle"></div>
+                                <div class="progress-value"><span> C 90</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <h3 style="margin-left: 100PX;font-weight: 700;"><U>Stength:</U><br></h3>
+                <ul style="font-family: 'Monotype Corsiva'; font-weight: bold; margin-left: 90PX;">
+                 <li><h3>Active Listner</h3></li>
+                 <li><h3>Quick Learner</h3></li>
+                </ul>
+                <BR>
+                    <h3 style="margin-left: 100PX;font-weight: 700;"><U>Achievements:</U></h3>
+        <ul style="font-family: 'Monotype Corsiva'; font-weight: bold; font-size: 23px;margin-left: 90PX; width: 800px;">
+            <li>I have Compeleted 6 Month's, Web Development Certification Training From Smart Tech Company,Sagar.</li>
+            <li>I was a Sports Achiever in my School Days,I was go Tmilnadu for the Teniquite Game as i Particiapted in it. </li>
+           </ul>
+    <div class="container3">
+        <button onclick="msg1()" ondblclick="msg2()">CHANGE THEME</button> 
+    </div>
+</body>
+<script>$(document).ready(function () {
+    $('.progress-value > span').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 3500,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+});
+function msg1()
+    {
+        document.getElementById("color").style.backgroundColor = "white";
+        document.getElementById("nav").style.backgroundColor = "black";
+        document.getElementsByTagName("a").style.color = "black";
+
+    }
+    function msg2(){
+        document.getElementById("color").style.backgroundColor = "#ADEFD1FF";
+        document.getElementById("nav").style.backgroundColor = "#00203FFF";
+    }
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</html>

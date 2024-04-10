@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        /* background-color: rgb(185, 150, 218); */
+        background-image: url('p9.png');
+        height: 100%;
+        background-color: #ADEFD1FF;
+    }
+
+    nav {
+        width: 350px;
+        background-color: #00203FFF;
+        height: 730px;
+        margin-top: -114px;
+
+    }
+
+    nav a {
+        margin-left: 30px;
+        text-decoration: none;
+        color: aliceblue;
+        margin-bottom: 30px;
+    }
+
+    .con .myimg {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-top: 20px;
+        margin-left: 70px;
+        border: 5px solid rgb(120, 118, 118);
+        box-shadow: 0 0 20px rgb(91, 90, 90), 0 0 50px rgb(89, 88, 88);
+        filter: contrast(140%);
+    }
+
+    h4 {
+        color: bisque;
+        margin-left: 90px;
+        text-decoration: bold;
+    }
+
+    .icons {
+        color: bisque;
+        margin-left: 3px;
+    }
+
+   
+
+    .icons a {
+        border: 1px solid rgb(250, 247, 240);
+        border-radius: 20px;
+        padding: 7px 9px;
+    }
+
+    
+    .fa-snapchat {
+        color: black;
+        background-color: rgb(204, 215, 57);
+
+    }
+
+    .fa-instagram {
+
+        background-image: linear-gradient(to bottom, rgb(96, 9, 81), rgb(216, 77, 17), yellow);
+
+    }
+
+    .fa-twitter {
+        color: rgb(77, 182, 238);
+        background-color: aliceblue;
+    }
+
+    .fa-linkedin {
+
+        background-color: blue;
+    }
+
+    .fa-github {
+        background-color: rgb(76, 11, 137);
+
+    }
+
+   
+
+    .container2 {
+        margin-left: 400px;
+        margin-top: 112px;
+        width: 300px;
+
+    }
+
+    .container3 {
+        margin-left: 900px;
+        margin-top: -184px;
+        width: 620px;
+        /* background-color: aquamarine; */
+        padding-left: 20px;
+    }
+
+    .img {
+        transform: rotate(90deg);
+
+    }
+
+    button {
+        box-shadow: 0 0 5px rgb(32, 52, 121), 0 0 25px rgb(32, 49, 157);
+        border-radius: 10px;
+        padding: 5px 8px;
+        border: none;
+        color: rgb(248, 241, 241);
+        background-color: rgb(12, 13, 56);
+    }
+
+    button:hover {
+        box-shadow: 0 0 5px rgb(31, 31, 137), 0 0 25px rgb(43, 37, 134), 0 0 50px rgb(46, 92, 177), 0 0 100px rgb(58, 113, 194), 0 0 200px rgb(65, 79, 185);
+    }
+
+    i {
+        font-size: 24px;
+        color: white;
+    }
+
+    .typing::before {
+        content: '';
+        background: rgb(55, 12, 56);
+        animation: cursorBlink 0.8s steps(3) infinite;
+    }
+
+    @keyframes cursorBlink {
+
+        0%,
+        75% {
+            opacity: 1;
+        }
+
+        76%,
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .typing {
+        position: relative;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+    }
+
+    .typing h2 {
+        position: relative;
+        letter-spacing: 5px;
+        font-size: 2.4rem;
+        overflow: hidden;
+        margin-bottom: 0;
+        animation: type 4s steps(14) infinite;
+        /* background: linear-gradient(to top, rgb(63, 10, 62), rgb(22, 33, 87)); */
+        background-image: url('back.jpeg');
+        background-repeat: repeat;
+        -webkit-text-fill-color: transparent;
+        /* margin-top: 200px; */
+        font-size: 25px;
+
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Steelfish Rg', 'helvetica neue',
+            helvetica, arial, sans-serif;
+        font-weight: 800;
+        -webkit-font-smoothing: antialiased;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    @keyframes type {
+
+        0%,
+        100% {
+            width: 0px;
+        }
+
+        30%,
+        60% {
+            width: 394.09px;
+        }
+    }
+
+    @media(max-width: 330px) {
+        .typing h2 {
+            font-size: 2rem;
+            animation: type 4s steps(14) infinite;
+        }
+
+        @keyframes type {
+
+            0%,
+            100% {
+                width: 0px;
+            }
+
+            30%,
+            60% {
+                width: 305px;
+            }
+        }
+    }
+
+    hr {
+        color: rgb(207, 167, 167);
+        font-weight: 800;
+    }
+
+    .active {
+        text-shadow: 0 0 5px rgb(129, 109, 129), 0 0 25px rgb(156, 123, 156);
+        font-size: 20px;
+
+    }
+
+    .active::after {
+        content: ' >>>';
+        color: antiquewhite;
+
+    }
+
+    .nav {
+        position: fixed;
+    }
+</style>
+
+<body>
+    <div class="container1 ">
+        <nav class="nav navbar-nav">
+            <div class="con">
+                <img class="myimg" src="shivani.jpg" alt=""><br>
+                <h4>Shivani Verma</h4>
+                <div class="icons">
+                    <a href="  https://www.snapchat.com/add/shivani_v9713?share_id=0Hz8OaW7mEA&locale=en-US
+                    " target="_blank" class="fa fa-snapchat"></a>
+                    <a href="  https://twitter.com/Shivi_3124" target="_blank" class="fa fa-twitter"></a>
+                    <a href="  https://github.com/Shivani3124
+                    " target="_blank" class="fa fa-github"></a>
+                    <a href="  https://www.linkedin.com/in/shivani-verma-036620279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+                    " target="_blank" class="fa fa-linkedin"></a>
+                    <a href="  https://www.instagram.com/__shivi_31_08?igsh=cGxkb2YzMGxlZWYy
+                    " target="_blank" class="fa fa-instagram"></a>
+                </div>
+
+            </div>
+
+            <a href="#" class="hover active"><i class="fa fa-home"></i>&nbsp;Home</a>
+            <a href="about.html" class="hover "><i class="fa fa-clone"></i>&nbsp;About</a>
+            <a href="resume.html" class="hover"><i class="fa fa-book"></i>&nbsp;Resume</a>
+            <a href="certificate.html" class="hover"><i class="fa fa-briefcase"></i>&nbsp;Certificates</a>
+            <a href="projects.html" class="hover"><i class="fa fa-phone"></i>&nbsp;Projects</a>
+            <a href="contact.html" class="hover"><i class="fa fa-handshake-o"></i>&nbsp;Contact</a>
+            <p style="margin-left: 40px;margin-top: 30px; color: rgb(123, 122, 120);">&nbsp;copyright
+                shivani312001@gmail.com</p>
+
+        </nav>
+
+    </div>
+
+    <div class="container2">
+        <h2>Hii,there..... <br></h2>
+        <div class="typing">
+            <h2 class="text-uppercase">Shivani&nbsp;Verma</h2>
+        </div> <br>
+        <p style="font-weight: 600;">Student of MCA <br> with,knowledge in web development and design. I offer the best projects resulting in
+            quality work</p>
+        <a href="about.html"><button>More About Me</button></a>  <a href="_Resume(shivani).pdf" target="_blank"><button>Download Resume</button></a>
+
+    </div>
+    <div class="container3">
+        <marquee behavior="slide" direction="left" scrollamount="25">
+            <!-- <img src="p2.gif"  class="img" alt="">  -->
+            <img src="shivi1.png" height="550px" style="filter: contrast(1.5);">
+        </marquee>
+    </div>
+</body>
+
+</html>
